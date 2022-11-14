@@ -1,4 +1,4 @@
-package task1;
+package task01;
 
 public class InvalidBirthDateException extends IllegalArgumentException {
     public InvalidBirthDateException() {
