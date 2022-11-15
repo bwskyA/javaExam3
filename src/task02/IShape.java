@@ -27,26 +27,22 @@ public interface IShape {
     }
 
     static IShape largestArea() {
-        double largestArea = shapesList.get(0).getArea();
         IShape largestAreaShape = shapesList.get(0);
 
         for (IShape shape : shapesList) {
-            if (shape.getArea() > largestArea) {
+            if (shape.getArea() > largestAreaShape.getArea()) {
                 largestAreaShape = shape;
-                largestArea = shape.getArea();
             }
         }
         return largestAreaShape;
     }
 
     static IShape largestPerimetr() {
-        double largestPerimetr = shapesList.get(0).getPerimeter();
         IShape largestPerimetrShape = shapesList.get(0);
 
         for (IShape shape : shapesList) {
-            if (shape.getArea() > largestPerimetr) {
+            if (shape.getArea() > largestPerimetrShape.getPerimeter()) {
                 largestPerimetrShape = shape;
-                largestPerimetr = shape.getArea();
             }
         }
         return largestPerimetrShape;
