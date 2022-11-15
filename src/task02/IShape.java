@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface IShape {
-    void countArea();
-
-    void countPerimeter();
-
     double getArea();
 
     double getPerimeter();
