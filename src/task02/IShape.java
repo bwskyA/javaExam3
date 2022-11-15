@@ -41,7 +41,7 @@ public interface IShape {
         IShape largestPerimetrShape = shapesList.get(0);
 
         for (IShape shape : shapesList) {
-            if (shape.getArea() > largestPerimetrShape.getPerimeter()) {
+            if (shape.getPerimeter() > largestPerimetrShape.getPerimeter()) {
                 largestPerimetrShape = shape;
             }
         }
